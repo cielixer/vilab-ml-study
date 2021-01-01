@@ -13,5 +13,5 @@ Book : [파이썬으로 배우는 머신러닝 교과서](http://book.interpark.
 * [JS] 2, Feb, 2021, ch 9
 
 ## Member
-* Jun Sup Shin
-* Young Wook Kang
+* Jun Sup Shin [github](https://github.com/cielixer)
+* Young Wook Kang [github](https://github.com/jack0159)
