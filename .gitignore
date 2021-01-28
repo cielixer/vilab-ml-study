@@ -52,4 +52,4 @@ geckodriver.log
 .history
 .vscode
 
-./ch8/data
+./ch8/data/
