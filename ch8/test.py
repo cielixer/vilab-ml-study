@@ -3,3 +3,6 @@ b = 1
 
 print(a)
 print(b)
+
+import sys
+print(sys.executable)
