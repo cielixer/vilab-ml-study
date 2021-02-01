@@ -1,0 +1,30 @@
+<Dense nn Version>
+	[changes]
+		1. (N, 28, 28) -> (N, 784)
+		2. 0~255 -> 0~1
+	[hyperparameter]
+		DenseNet 784 -> 16 -> 10
+		optimizer : Adam
+		batch_size = 1000
+		epoch=10
+		activation=sigmoid
+
+<CNN Version>
+	[hyperparameter]
+		0~255 -> 0~1
+		CNN architecture:
+			(1x28x28) -> (8x28x28, k=3, p=1, s=1) -> (6272) -> (10)
+		optimizer=Adam
+		activation=relu
+
+<CNN pooling, Dropout Version>
+	CNN architecture
+		input 	(1x28x28)
+		cnn	(16x28x28, k=3, p=1, s=1)->relu
+		cnn	(32,28,28, k=3, p=1, s=1)->relu
+		pooling	(32,14,14,k=(2,2))
+		cnn	(64,14,14,k=3,p=1,s=1)->relu
+		pooling	(64,7,7,k=(2,2)) *dropout=0.25
+		FCN	(128)->relu *dropout=0.25 
+		FCN	(10)->softmax
+
